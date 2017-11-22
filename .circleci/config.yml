@@ -19,6 +19,8 @@ workflows:
     - echo_1
     - echo_2:
         filters:
+          branches:
+            ignore: /.*/
           tags:
             only: /v[0-9]+(\.[0-9]+)*/
 # test
